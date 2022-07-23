@@ -1,39 +1,32 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const initialState = [
-  {
-    id: 1,
-    name: "Bitcoin",
-    symbol: "BTC",
-    price: "$6800.00",
-    change: "+0.00",
-    changePercent: "0.00%",
-    marketCap: "$1.8B",
-    volume: "$1.8B",
-    circulatingSupply: "1.8B",
-    maxSupply: "1.8B",
-    lastUpdated: "1:00 AM",
-  },
-  {
-    id: 2,
-
-    name: "Ethereum",
-    symbol: "ETH",
-    price: "$6800.00",
-    change: "+0.00",
-    changePercent: "0.00%",
-    marketCap: "$1.8B",
-    volume: "$1.8B",
-    circulatingSupply: "1.8B",
-    maxSupply: "1.8B",
-    lastUpdated: "1:00 AM",
-  },
-];
+export const getCrypto = createAsyncThunk("crypto/getCrypto", async () => {
+  const getResponse = await axios
+    .get(
+      "https://financialmodelingprep.com/api/v3/actives?apikey=e5f07c74bba65323ca5c6a6031fb167e"
+    )
+    .catch((err) => {
+      console.log("error", err);
+    });
+  const dat = getResponse.data;
+  console.log(dat);
+  const lala = Object.keys(dat).map((key) => ({
+    id: key,
+    ...dat[key[0]],
+  }));
+  return lala;
+});
 
 const cryptoSlice = createSlice({
   name: "crypto",
-  initialState,
+  initialState: [],
   reducers: {},
+  extraReducers: {
+    [getCrypto.fulfilled]: (state, action) => {
+      return action.payload;
+    },
+  },
 });
 
 export default cryptoSlice.reducer;
