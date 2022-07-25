@@ -6,6 +6,7 @@ import Popular from "./components/Popular";
 import Loosers from "./components/Loosers";
 import Gainers from "./components/Gainers";
 import AllStocks from "./components/AllStocks";
+import PopularDetail from "./components/PopularDetail";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/loosers" element={<Loosers />} />
           <Route path="/gainers" element={<Gainers />} />
           <Route path="/all" element={<AllStocks />} />
+          <Route path="/popularDetail/:id" element={<PopularDetail />} />
         </Routes>
       </Router>
     </div>

@@ -1,25 +1,33 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { getCrypto } from "../feature/cryptoSlice";
 import Nav from "../pages/Navbar";
+import "./popular.css";
 
 const Popular = () => {
   const dispatch = useDispatch();
-  const crypt = useSelector((state) => state.crypto);
-  console.log(crypt);
+  const allPopular = useSelector((state) => state.crypto);
+  console.log(allPopular);
   useEffect(() => {
     dispatch(getCrypto());
   }, [dispatch]);
   return (
     <div>
       <Nav />
-      {crypt.map((cryp, i) => (
-        <div key={i}>
-          <h1>{cryp.companyName}</h1>
-          <img src={cryp.ticker} alt="" />
-        </div>
-      ))}
+      <div className="popular-div">
+        {allPopular.map((popular, i) => (
+          <Link to={`/popularDetail/${popular.id}`} key={i} className="pop">
+            <h3 className="name">{popular.name}</h3>
+            <img src={popular.image} alt="crypto" />
+            <div className="details">
+              <p className="change">{popular.symbol}</p>
+              <p className="price">{popular.current_price}$</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

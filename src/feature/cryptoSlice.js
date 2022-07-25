@@ -4,18 +4,13 @@ import axios from "axios";
 export const getCrypto = createAsyncThunk("crypto/getCrypto", async () => {
   const getResponse = await axios
     .get(
-      "https://financialmodelingprep.com/api/v3/actives?apikey=e5f07c74bba65323ca5c6a6031fb167e"
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false"
     )
     .catch((err) => {
       console.log("error", err);
     });
   const dat = getResponse.data;
-  console.log(dat);
-  const lala = Object.keys(dat).map((key) => ({
-    id: key,
-    ...dat[key[0]],
-  }));
-  return lala;
+  return dat;
 });
 
 const cryptoSlice = createSlice({
