@@ -24,8 +24,10 @@
 .details-div{
     display: flex;
     margin-top: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .less{
     color: red;
