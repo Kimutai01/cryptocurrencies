@@ -4,10 +4,12 @@
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     width: 100%;
   }
-  .change, .price{
+
+  .change,
+  .price {
     font-size: 1rem;
   }
-  
+
   .pop img {
     height: 50px;
     width: 50px;
@@ -20,11 +22,14 @@
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     width: 100%;
   }
+
   .pop img {
     height: 100px;
     width: 100px;
   }
-  .change, .price{
+
+  .change,
+  .price {
     font-size: 1.2rem;
   }
 }
@@ -34,6 +39,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .pop img {
     height: 130px;
     width: 130px;
@@ -48,6 +54,7 @@
     width: 85%;
     gap: 30px;
   }
+
   .pop img {
     height: 150px;
     width: 150px;
@@ -69,7 +76,7 @@
 }
 
 .main {
-  background:  rgb(21, 22, 56);
+  background: rgb(21, 22, 56);
 }
 
 .pop {
@@ -92,7 +99,6 @@
 .more {
   color: green;
 }
-
 
 .name {
   text-decoration: none;
