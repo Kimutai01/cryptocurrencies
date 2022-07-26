@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cryptoReducer from '../feature/cryptoSlice';
-import searchReducer from '../feature/searchSlice';
+import cryptoReducer from '../redux/cryptoSlice';
+import searchReducer from '../redux/searchSlice';
 
 const store = configureStore({
   reducer: {

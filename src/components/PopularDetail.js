@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCrypto, selectStocksData } from '../feature/cryptoSlice';
+import { getCrypto, selectStocksData } from '../redux/cryptoSlice';
 import './Details.css';
 
 const PopularDetail = () => {

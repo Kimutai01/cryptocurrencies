@@ -1,8 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popular component testing 1`] = `
-<div>
-  <div>
+<div
+  className="main"
+>
+  <div
+    style={
+      Object {
+        "overflow": "none",
+      }
+    }
+  >
     <div
       className="carousel slide carousel-fade"
       onKeyDown={[Function]}
@@ -47,6 +55,30 @@ exports[`Popular component testing 1`] = `
           <img
             alt="stock"
             className="d-block w-100"
+            src="coin.jpg"
+            style={
+              Object {
+                "height": "100vh",
+              }
+            }
+          />
+          <div
+            className="carousel-caption"
+          >
+            <h3>
+              Check accurate coin data 💯
+            </h3>
+            <p>
+              We provide accurate coin data all over the world.
+            </p>
+          </div>
+        </div>
+        <div
+          className="carousel-item"
+        >
+          <img
+            alt="stock2"
+            className="d-block w-100"
             src="tether.jpg"
             style={
               Object {
@@ -58,10 +90,10 @@ exports[`Popular component testing 1`] = `
             className="carousel-caption"
           >
             <h3>
-              Check popular stocks of varios companies 💯
+              Check data of all coins 😇
             </h3>
             <p>
-              We provide accurate stocks of various companies all over the world.
+              We provide data about all coins
             </p>
           </div>
         </div>
@@ -69,7 +101,7 @@ exports[`Popular component testing 1`] = `
           className="carousel-item"
         >
           <img
-            alt="stock2"
+            alt="stock4"
             className="d-block w-100"
             src="main.jpg"
             style={
@@ -82,34 +114,10 @@ exports[`Popular component testing 1`] = `
             className="carousel-caption"
           >
             <h3>
-              Check Gainers and losers 😇
+              We record changes every minute👌
             </h3>
             <p>
-              Avoid losses by checking out the gainers and losers of the day.
-            </p>
-          </div>
-        </div>
-        <div
-          className="carousel-item"
-        >
-          <img
-            alt="stock4"
-            className="d-block w-100"
-            src="coin.jpg"
-            style={
-              Object {
-                "height": "100vh",
-              }
-            }
-          />
-          <div
-            className="carousel-caption"
-          >
-            <h3>
-              Get accurate data of all stocks👌
-            </h3>
-            <p>
-              We provide all stocks data
+              We provide all crypto changes every minute
             </p>
           </div>
         </div>
@@ -153,16 +161,19 @@ exports[`Popular component testing 1`] = `
     </div>
   </div>
   <div
-    className="mx-auto flex items-center"
-    id="search-container"
+    className="search"
   >
-    <input
-      id="search"
-      onChange={[Function]}
-      placeholder="Search"
-      type="text"
-      value=""
-    />
+    <div
+      className="search-div"
+    >
+      <input
+        id="search"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
   <div
     className="popular-div"
