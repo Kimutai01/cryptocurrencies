@@ -1,20 +1,20 @@
-import React from "react";
-import "bootstrap/dist/js/bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-bootstrap";
-import image from "../assets/images/tether.jpg";
-import rates2 from "../assets/images/main.jpg";
-import rates3 from "../assets/images/coin.jpg";
+import React from 'react';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+import image from '../assets/images/tether.jpg';
+import rates2 from '../assets/images/main.jpg';
+import rates3 from '../assets/images/coin.jpg';
 
 const Home = () => (
-  <div style={{ overflow: "none" }}>
+  <div style={{ overflow: 'none' }}>
     <Carousel fade>
       <Carousel.Item>
         <img
           src={image}
           className="d-block w-100"
           alt="stock"
-          style={{ height: "100vh" }}
+          style={{ height: '100vh' }}
         />
         <Carousel.Caption>
           <h3>Check accurate coin data 💯</h3>
@@ -26,7 +26,7 @@ const Home = () => (
           src={rates2}
           alt="stock2"
           className="d-block w-100"
-          style={{ height: "100vh" }}
+          style={{ height: '100vh' }}
         />
         <Carousel.Caption>
           <h3>Check data of all coins 😇</h3>
@@ -38,7 +38,7 @@ const Home = () => (
           src={rates3}
           alt="stock4"
           className="d-block w-100"
-          style={{ height: "100vh" }}
+          style={{ height: '100vh' }}
         />
         <Carousel.Caption>
           <h3>We record changes every minute👌</h3>

@@ -1,39 +1,38 @@
 
 @media screen and (min-width: 450px) {
-    .search-div input{
-        width: 600px;
-    }
-  
+  .search-div input {
+    width: 600px;
+  }
 }
+
 @media screen and (min-width: 450px) {
-    .search-div input{
-        width: 500px;
-    }
-  
+  .search-div input {
+    width: 500px;
+  }
 }
+
 @media screen and (min-width: 901px) {
-    .search-div input{
-        width: 500px;
-    }
-    
-}   
+  .search-div input {
+    width: 500px;
+  }
+}
 
 @media screen and (min-width: 1201px) {
-    .search-div input{
-        width: 700px;
-    }
+  .search-div input {
+    width: 700px;
+  }
 }
-    
 
-.search-div{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.search-div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.search-div input{
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 10px;
-    margin-left: 20px;
+
+.search-div input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 20px;
 }

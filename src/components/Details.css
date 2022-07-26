@@ -1,52 +1,53 @@
 @media screen and (min-width: 200px) {
-  .details-page-container{
+  .details-page-container {
     width: 300px;
     height: 100vh;
     margin: 0 auto;
   }
-  .details-div{
+
+  .details-div {
     margin-left: 30px;
-  margin-right: 30px;
+    margin-right: 30px;
   }
 }
-  
-
 
 @media screen and (min-width: 400px) {
-  .details-page-container{
+  .details-page-container {
     width: 400px;
     height: 100vh;
     margin: 0 auto;
   }
-  .details-div{
+
+  .details-div {
     margin-left: 50px;
-  margin-right: 50px;
+    margin-right: 50px;
   }
 }
+
 @media screen and (min-width: 901px) {
-  .details-page-container{
+  .details-page-container {
     width: 700px;
     height: 100vh;
     margin: 0 auto;
   }
-  .details-div{
+
+  .details-div {
     margin-left: 100px;
-  margin-right: 100px;
+    margin-right: 100px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .details-page-container{
+  .details-page-container {
     width: 900px;
     height: 100vh;
   }
-  .details-div{
+
+  .details-div {
     margin-left: 150px;
-  margin-right: 150px;
+    margin-right: 150px;
   }
 }
-  
-
 
 .details-page {
   background: rgb(34, 51, 66);
@@ -77,7 +78,6 @@
   margin-top: 20px;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .less {
