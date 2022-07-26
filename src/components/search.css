@@ -1,0 +1,12 @@
+.search-div{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.search-div input{
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}

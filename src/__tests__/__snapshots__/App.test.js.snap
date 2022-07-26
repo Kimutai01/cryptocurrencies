@@ -153,6 +153,18 @@ exports[`Popular component testing 1`] = `
     </div>
   </div>
   <div
+    className="mx-auto flex items-center"
+    id="search-container"
+  >
+    <input
+      id="search"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
     className="popular-div"
   />
 </div>

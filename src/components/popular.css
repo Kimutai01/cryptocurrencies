@@ -6,6 +6,10 @@
   color: aliceblue;
 }
 
+.main{
+  background: rgb(34, 51, 66);
+}
+
 .pop {
   margin-top: 20px;
   margin-left: 20px;

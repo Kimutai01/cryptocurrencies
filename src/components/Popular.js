@@ -1,19 +1,21 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { getCrypto } from '../feature/cryptoSlice';
-import Home from '../pages/Home';
-import './popular.css';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { getCrypto, selectFilteredStocks } from "../feature/cryptoSlice";
+import Home from "../pages/Home";
+import "./popular.css";
+import Search from "./Search";
 
 const Popular = () => {
   const dispatch = useDispatch();
-  const allPopular = useSelector((state) => state.crypto);
+  const allPopular = useSelector(selectFilteredStocks);
   useEffect(() => {
     dispatch(getCrypto());
   }, [dispatch]);
   return (
-    <div>
+    <div className="main">
       <Home />
+      <Search />
       <div className="popular-div">
         {allPopular.map((popular) => (
           <Link
@@ -25,10 +27,7 @@ const Popular = () => {
             <img src={popular.image} alt="crypto" />
             <div className="details">
               <p className="change">{popular.symbol}</p>
-              <p className="price">
-                {popular.current_price}
-                $
-              </p>
+              <p className="price">{popular.current_price}$</p>
             </div>
           </Link>
         ))}
