@@ -9,7 +9,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/popular" element={<Popular />} />
+          <Route path="/" element={<Popular />} />
           <Route path="/popularDetail/:id" element={<PopularDetail />} />
         </Routes>
       </Router>
