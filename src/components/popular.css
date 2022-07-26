@@ -9,7 +9,7 @@
     margin-right: 10px;
   }
 }
-  
+
 
 @media screen and (max-width: 600px) {
   .popular-div {
@@ -49,12 +49,13 @@
   background: rgb(172, 46, 197);
   color: aliceblue;
 }
-.pop-class{
+
+.pop-class {
   display: flex;
   justify-content: space-around;
-  
 }
-.arr{
+
+.arr {
   margin-top: 10px;
 }
 
