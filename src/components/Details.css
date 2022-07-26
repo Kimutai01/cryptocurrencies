@@ -50,7 +50,7 @@
 }
 
 .details-page {
-  background: rgb(34, 51, 66);
+  background: rgb(168, 31, 196);
   height: 100%;
 }
 
@@ -94,7 +94,7 @@
   height: 50px;
   width: 150px;
   color: aliceblue;
-  background: linear-gradient(to right, #1e3952 0%, #40697a 100%);
+  background: linear-gradient(to right, #c421c4 0%, #520e52 100%);
 }
 
 .back:hover {

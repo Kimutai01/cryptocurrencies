@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getCrypto, selectFilteredStocks } from '../feature/cryptoSlice';
@@ -23,7 +24,10 @@ const Popular = () => {
             key={popular.id}
             className="pop"
           >
-            <h3 className="name">{popular.name}</h3>
+            <div className="pop-class">
+              <h3 className="name">{popular.name}</h3>
+              <BsArrowRightCircle className="arr" />
+            </div>
             <img src={popular.image} alt="crypto" />
             <div className="details">
               <p className="change">{popular.symbol}</p>
