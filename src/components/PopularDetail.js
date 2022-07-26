@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getCrypto } from "../feature/cryptoSlice";
-import "./Details.css";
+import React, { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getCrypto, selectStocksData } from '../feature/cryptoSlice';
+import './Details.css';
 
 const PopularDetail = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const PopularDetail = () => {
     dispatch(getCrypto());
   }, [dispatch]);
   const { id } = useParams();
-  const det = useSelector((state) => state.crypto);
+  const det = useSelector(selectStocksData);
   const index = det.findIndex((item) => item.id === id);
   return (
     <div className="details-page">
@@ -26,7 +26,10 @@ const PopularDetail = () => {
         </div>
         <div className="details-div">
           <h4>Current price</h4>
-          <p>{det[index].current_price}$</p>
+          <p>
+            {det[index].current_price}
+            $
+          </p>
         </div>
         <div className="details-div">
           <h4>Market price</h4>
@@ -40,17 +43,18 @@ const PopularDetail = () => {
           <h4>Price change percentage</h4>
           <p
             className={
-              det[index].price_change_percentage_24h < 0 ? "less" : "more"
+              det[index].price_change_percentage_24h < 0 ? 'less' : 'more'
             }
           >
-            {det[index].price_change_percentage_24h}%
+            {det[index].price_change_percentage_24h}
+            %
           </p>
         </div>
         <div className="details-div">
           <h4>Price change</h4>
           <p
             className={
-              det[index].price_change_percentage_24h < 0 ? "less" : "more"
+              det[index].price_change_percentage_24h < 0 ? 'less' : 'more'
             }
           >
             {det[index].price_change_24h}

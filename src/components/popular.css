@@ -1,6 +1,35 @@
+@media screen and (max-width: 600px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .pop{
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 70px;
+  }
+  .pop{
+    width: 250px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+}
 .popular-div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  
   grid-gap: 10px;
   background: rgb(34, 51, 66);
   color: aliceblue;
@@ -15,7 +44,6 @@
   margin-left: 20px;
   height: 250px;
   background: linear-gradient(to right, #1e3952 0%, #40697a 100%);
-  width: 350px;
   margin-bottom: 3rem;
   box-shadow: 1px 7px 5px 3px rgba(197, 214, 219, 0.75);
   -webkit-box-shadow: 1px 7px 5px 3px rgba(197, 214, 219, 0.75);
@@ -58,3 +86,5 @@ a {
   font-size: 2rem;
   justify-content: space-around;
 }
+
+

@@ -1,16 +1,14 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setSearchTerm, selectSearchTerm } from "../feature/searchSlice";
-import "./search.css";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchTerm, selectSearchTerm } from '../feature/searchSlice';
+import './search.css';
 
 export default function Search() {
   const dispatch = useDispatch();
   const searchTerm = useSelector(selectSearchTerm);
-  console.log(searchTerm);
 
   const onSearch = ({ target }) => {
     const { value } = target;
-    console.log(value);
     dispatch(setSearchTerm(value));
   };
 

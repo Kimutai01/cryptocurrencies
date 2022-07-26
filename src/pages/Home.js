@@ -7,7 +7,7 @@ import rates2 from '../assets/images/main.jpg';
 import rates3 from '../assets/images/coin.jpg';
 
 const Home = () => (
-  <div>
+  <div style={{ overflow: 'none' }}>
     <Carousel fade>
       <Carousel.Item>
         <img
