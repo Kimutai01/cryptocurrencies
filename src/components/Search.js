@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchTerm, selectSearchTerm } from '../feature/searchSlice';
+import { setSearchTerm, selectSearchTerm } from '../redux/searchSlice';
 import './search.css';
 
 export default function Search() {
