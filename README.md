@@ -13,7 +13,12 @@
 
 ## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://mellifluous-gumdrop-3fb97a.netlify.app/)
+
+## Live Presentation 
+
+[Live presentation Link](https://www.loom.com/share/b7b872ec95324be69aeddab98c2cee08)
+
 
 
 ## Getting Started
