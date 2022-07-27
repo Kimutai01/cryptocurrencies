@@ -1,0 +1,116 @@
+@media screen and (max-width: 380px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    width: 100%;
+  }
+
+  .change,
+  .price {
+    font-size: 1rem;
+  }
+
+  .pop img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    width: 100%;
+  }
+
+  .pop img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .change,
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pop img {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .popular-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 1fr));
+    margin: 0 auto;
+    width: 85%;
+    gap: 30px;
+  }
+
+  .pop img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.popular-div {
+  background: rgb(21, 22, 56);
+  color: aliceblue;
+}
+
+.pop-class {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arr {
+  margin-top: 10px;
+}
+
+.main {
+  background: rgb(21, 22, 56);
+}
+
+.pop {
+  height: 250px;
+  background: linear-gradient(to right, #1f264e 0%, #2e4d75 100%);
+  opacity: 0.8;
+  text-align: center;
+  color: aliceblue;
+}
+
+.pop:hover {
+  opacity: 1;
+  color: wheat;
+}
+
+.less {
+  color: red;
+}
+
+.more {
+  color: green;
+}
+
+.name {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+}
